@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'young-serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype'); /* Add other formats if available */
+    /* Additional properties (optional) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'outfit';
+    src: url('./assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype'); /* Add other formats if available */
+    /* Additional properties (optional) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+body {
+    background-color: hsl(330, 100%, 98%);
+    text-align: left;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.view {
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+}
+b{
+    font-family: "young-serif";
+    font-weight: 500;
+}
+p {
+    font-family: "outfit";
+}
+img {
+    border-radius: 5px;
+}
+h1 {
+    font-family: "young-serif";
+    font-weight: 600;
+}
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "young-serif";
+    font-weight: 500;
+}
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: "young-serif";
+    font-weight: 500;
+}
+.prep {
+    h3{
+        margin-left: 20px;
+    }
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+}
+li {
+    margin-top: 10px;
+    padding-left: 5px;
+    b{
+        color: hsl(30, 10%, 34%);
+    }
+}
+.ingredients {
+
+
+ul {
+    display: block;
+    padding-inline-start: 15px; 
+}
+}
+.head, .ingredients, .instructions {
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 5px;
+   b{
+    color: hsl(14, 45%, 36%);
+   }
+}
+table {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+@media screen and (max-width: 500px) {
+    body{
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        }
+    .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .view{
+        width: 100vw;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .head, .prep, .ingredients, .instructions, .nut {
+        margin: 20px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+    .prep {
+        margin-right: 20px;
+    }
+}
